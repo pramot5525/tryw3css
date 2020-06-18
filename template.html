@@ -37,7 +37,7 @@
   </div>
   <!-- Content -->
 
-  <div class="content">
+  <div class="content py-0">
     <div class="fix-padding" id="projects">
       <div class="container-fluid">
         <div class="row p-32">
@@ -102,16 +102,14 @@
 
   <!-- Content 2 -->
 
-  <div class="content">
+  <div class="content py-0">
     <div class="fix-padding" id="about">
       <div class="container-fluid">
         <div class="row p-32">
           <div class="col-12">
             <h3 class="content-title">About</h3>
           </div>
-        </div>
 
-        <div class="row">
           <div class="col-12">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
@@ -169,7 +167,7 @@
     </div>
   </div>
 
-  <div class="content contact-form">
+  <div class="content contact-form pb-0">
     <div id="contact">
       <div class="container-fluid">
         <div class="row p-32">
@@ -192,12 +190,19 @@
             </form>
           </div>
         </div>
-
-
       </div>
     </div>
   </div>
 
+  <div class="content pt-0">
+    <div class="container-fluid">
+      <img style="width: 100%;" src="https://www.w3schools.com/w3images/map.jpg" alt="map">
+    </div>
+  </div>
+  <footer>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+        class="w3-hover">w3.css</a></p>
+  </footer>
 
   <style>
     body {
@@ -228,6 +233,10 @@
       letter-spacing: 4px;
       color: black;
       padding: 8px 16px !important;
+    }
+
+    p {
+      margin: 15px 0;
     }
 
     .navbar-brand:hover,
@@ -340,6 +349,10 @@
       padding: 8px 16px;
     }
 
+    .btn {
+      border: none;
+    }
+
     .btn,
     .form-control {
       border-radius: 0;
@@ -348,6 +361,7 @@
 
     .form-control {
       padding: 8px;
+      height: initial;
     }
 
     .form-control:not(:first-child) {
@@ -365,9 +379,26 @@
       box-shadow: none;
     }
 
+    footer {
+      text-align: center;
+      padding: 16px 0;
+      color: white;
+      background-color: black;
+    }
 
+    footer p {
+      padding: 15px 0;
+      margin: 0 auto;
+    }
 
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
 
+    footer a:hover {
+      color: green;
+    }
 
 
     @media (max-width: 600px) {
